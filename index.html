@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Diana Hernández · Trabajo Social y Locución</title>
+<meta name="description" content="Diana Hernández — Licenciada en Trabajo Social (UCV) y locutora radial. Atención a jóvenes en situación de riesgo, familias y comunidades.">
+<meta property="og:title" content="Diana Hernández · Trabajo Social y Locución">
+<meta property="og:description" content="Licenciada en Trabajo Social y locutora radial. Más de 20 años acompañando a jóvenes, familias y comunidades.">
+<meta property="og:image" content="diana.jpg">
+<meta name="theme-color" content="#e9dccb">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#faf6f0; --surface:#fff; --sand:#e9dccb; --sand-2:#d9c6ad;
+  --ink:#2b2622; --muted:#6f655c; --accent:#9a5b3c; --line:#e6dccf;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{background:var(--bg);color:var(--ink);font:400 17px/1.65 Inter,system-ui,sans-serif}
+a{color:inherit}
+.wrap{max-width:980px;margin:0 auto;padding:0 20px}
+
+/* nav */
+nav{position:sticky;top:0;z-index:10;background:rgba(250,246,240,.9);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;gap:22px;align-items:center;height:56px;overflow-x:auto;scrollbar-width:none}
+nav .wrap::-webkit-scrollbar{display:none}
+nav a{text-decoration:none;font-size:14px;font-weight:500;color:var(--muted);white-space:nowrap}
+nav a:hover{color:var(--accent)}
+nav .brand{font-family:Fraunces,serif;font-size:18px;color:var(--ink);margin-right:auto}
+
+/* hero */
+.hero{background:var(--sand);padding:56px 0 64px}
+.hero .wrap{display:grid;grid-template-columns:260px 1fr;gap:48px;align-items:center}
+.photo{width:260px;aspect-ratio:1;border-radius:50%;overflow:hidden;background:#111;box-shadow:0 20px 40px -20px rgba(60,40,20,.45)}
+.photo img{width:100%;height:100%;object-fit:cover;object-position:50% 22%}
+h1{font-family:Fraunces,serif;font-weight:300;font-size:clamp(40px,7vw,68px);line-height:1.02;letter-spacing:-.01em}
+.role{margin-top:14px;font-size:14px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted)}
+.lead{margin-top:20px;max-width:52ch;font-size:18px}
+.cta{margin-top:28px;display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:13px 22px;border-radius:999px;text-decoration:none;font-weight:600;font-size:15px;min-height:48px}
+.btn.primary{background:var(--ink);color:#fff}
+.btn.ghost{border:1.5px solid var(--ink)}
+.btn svg{width:18px;height:18px}
+
+/* sections */
+section,#sobre-mi{scroll-margin-top:64px}
+section{padding:64px 0;border-bottom:1px solid var(--line)}
+h2{font-family:Fraunces,serif;font-weight:500;font-size:clamp(28px,4.5vw,36px);margin-bottom:28px}
+h2 small{display:block;font-family:Inter,sans-serif;font-size:13px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);margin-bottom:6px}
+
+/* timeline */
+.timeline{list-style:none;position:relative;padding-left:28px}
+.timeline:before{content:"";position:absolute;left:6px;top:8px;bottom:8px;width:2px;background:var(--sand-2)}
+.job{position:relative;padding-bottom:36px}
+.job:last-child{padding-bottom:0}
+.job:before{content:"";position:absolute;left:-28px;top:7px;width:14px;height:14px;border-radius:50%;background:var(--bg);border:2px solid var(--accent)}
+.when{font-size:13px;font-weight:600;letter-spacing:.06em;color:var(--accent)}
+.job h3{font-size:19px;font-weight:600;margin-top:2px}
+.org{color:var(--muted);font-size:15px;margin-bottom:10px}
+.job ul{padding-left:18px}
+.job li{margin:4px 0}
+
+/* grids */
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:20px 22px}
+.card .when{margin-bottom:4px}
+.card h3{font-size:17px;font-weight:600;line-height:1.35}
+.card p{color:var(--muted);font-size:15px;margin-top:4px}
+.chips{display:flex;flex-wrap:wrap;gap:10px}
+.chip{background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:9px 16px;font-size:15px}
+.lang{margin-top:28px;color:var(--muted)}
+.lang strong{color:var(--ink)}
+
+/* contact */
+#contacto{background:var(--sand);border-bottom:0}
+.contact{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.contact a{display:flex;flex-direction:column;gap:4px;background:var(--surface);border-radius:14px;padding:20px 22px;text-decoration:none;border:1px solid transparent;min-height:48px}
+.contact a:hover{border-color:var(--accent)}
+.contact span{font-size:13px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--accent)}
+.contact b{font-weight:500;word-break:break-word}
+footer{padding:28px 0;text-align:center;font-size:13px;color:var(--muted);background:var(--sand)}
+
+@media (max-width:760px){
+  body{font-size:16px}
+  .hero{padding:36px 0 44px}
+  .hero .wrap{grid-template-columns:1fr;gap:24px;text-align:center}
+  .photo{width:180px;margin:0 auto}
+  .lead{margin-left:auto;margin-right:auto}
+  .cta{justify-content:center}
+  section{padding:48px 0}
+  .grid,.contact{grid-template-columns:1fr}
+  nav .brand{display:none}
+}
+</style>
+</head>
+<body>
+
+<nav><div class="wrap">
+  <a class="brand" href="#">Diana Hernández</a>
+  <a href="#sobre-mi">Sobre mí</a>
+  <a href="#experiencia">Experiencia</a>
+  <a href="#educacion">Educación</a>
+  <a href="#habilidades">Habilidades</a>
+  <a href="#contacto">Contacto</a>
+</div></nav>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="photo"><img src="diana.jpg" alt="Foto de Diana Hernández" width="309" height="432"></div>
+    <div>
+      <h1>Diana<br>Hernández</h1>
+      <p class="role">Licenciada en Trabajo Social · Locutora radial</p>
+      <p class="lead" id="sobre-mi">Abordaje de jóvenes en situación de riesgo, adicciones, medidas privativas de libertad, dinámicas familiares y comunidades. Diseño y facilitación de talleres formativos, con experiencia en salud, psicología, cultura, radio (nacional e internacional) y telecomunicaciones.</p>
+      <div class="cta">
+        <a class="btn primary" href="https://wa.me/584162162643">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4c1.7.7 2.3.8 3.2.7.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.2-.2-.4-.3z"/></svg>
+          WhatsApp
+        </a>
+        <a class="btn ghost" href="mailto:dihh1978@gmail.com">Escríbeme</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main>
+<section id="experiencia">
+  <div class="wrap">
+    <h2><small>Trayectoria</small>Experiencia</h2>
+    <ol class="timeline">
+      <li class="job">
+        <p class="when">2024 – Actualidad</p>
+        <h3>Trabajadora Social</h3>
+        <p class="org">Organización de Bienestar Estudiantil · Universidad Central de Venezuela</p>
+        <ul>
+          <li>Atención de estudiantes, orientación vocacional y abordaje familiar.</li>
+          <li>Coordinación de tareas, actividades y seguimiento de los programas socioeconómicos (Beca Estudio, Beca Ayudantía y Beca Preparaduría).</li>
+          <li>Levantamiento de información en las distintas facultades.</li>
+        </ul>
+      </li>
+      <li class="job">
+        <p class="when">2019 – 2020</p>
+        <h3>Operadora Socioterapéutica</h3>
+        <p class="org">Comunidad Terapéutica El Palomar</p>
+        <ul>
+          <li>Atención de jóvenes de 12 a 19 años con problemas de adicción.</li>
+          <li>Coordinación de tareas y actividades con los jóvenes de la comunidad terapéutica.</li>
+          <li>Seguimiento del cumplimiento del tratamiento psiquiátrico.</li>
+          <li>Guardias de 24 horas y reporte de actividades.</li>
+        </ul>
+      </li>
+      <li class="job">
+        <p class="when">2008 – 2016</p>
+        <h3>Analista de Asuntos Sociales</h3>
+        <p class="org">Comisión Nacional de Telecomunicaciones (CONATEL)</p>
+        <ul>
+          <li>Seguimiento de Proyectos de Servicio Universal de Telecomunicaciones.</li>
+          <li>Elaboración de oficios, memorandos, minutas y puntos de información.</li>
+          <li>Visitas e inspecciones a localidades adscritas a los proyectos.</li>
+          <li>Diseño y facilitación de talleres, charlas y asambleas sobre tecnologías de información y comunicación.</li>
+        </ul>
+      </li>
+      <li class="job">
+        <p class="when">2006 – 2007</p>
+        <h3>Coordinadora de Becas</h3>
+        <p class="org">Consejo Nacional de la Cultura</p>
+        <ul>
+          <li>Sistematización de aspirantes y beneficiarios de becas culturales: danza, teatro, artes plásticas y cine.</li>
+          <li>Recepción y archivo de documentación para la elaboración de expedientes, y seguimiento.</li>
+          <li>Visitas domiciliarias para optar al programa de becas culturales.</li>
+        </ul>
+      </li>
+      <li class="job">
+        <p class="when">2005 – 2006</p>
+        <h3>Orientadora</h3>
+        <p class="org">Asociación Civil de Planificación Familiar (PLAFAM)</p>
+        <ul>
+          <li>Recepción de pacientes y apertura de historias clínicas.</li>
+          <li>Facilitación de talleres de salud sexual y reproductiva (ITS, métodos anticonceptivos, detección temprana de patologías, protección y cuidado íntimo).</li>
+        </ul>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<section id="educacion">
+  <div class="wrap">
+    <h2><small>Formación</small>Educación</h2>
+    <div class="grid">
+      <div class="card"><p class="when">1999 – 2004</p><h3>Licenciatura en Trabajo Social</h3><p>Universidad Central de Venezuela</p></div>
+      <div class="card"><p class="when">2004 – 2006</p><h3>Licenciatura en Psicología · 4 semestres cursados</h3><p>Universidad Central de Venezuela</p></div>
+      <div class="card"><p class="when">2006</p><h3>Locución Radial</h3><p>Universidad Central de Venezuela</p></div>
+      <div class="card"><p class="when">2019</p><h3>Ciclo Básico Común de Psicología (aprobado)</h3><p>Universidad de Buenos Aires</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="habilidades">
+  <div class="wrap">
+    <h2><small>Lo que hago bien</small>Habilidades</h2>
+    <div class="chips">
+      <span class="chip">Atención al público</span>
+      <span class="chip">Oratoria</span>
+      <span class="chip">Dinamización de procesos familiares y locales</span>
+      <span class="chip">Investigación social</span>
+      <span class="chip">Comunicación asertiva</span>
+      <span class="chip">Resolución de conflictos</span>
+      <span class="chip">Producción y conducción radial</span>
+      <span class="chip">Redes sociales con contenido social y formativo</span>
+      <span class="chip">Cultura general</span>
+    </div>
+    <p class="lang"><strong>Idiomas:</strong> Español (nativo) · Inglés (básico)</p>
+  </div>
+</section>
+
+<section id="contacto">
+  <div class="wrap">
+    <h2><small>Hablemos</small>Contacto</h2>
+    <div class="contact">
+      <a href="tel:+584162162643"><span>Teléfono</span><b>0416-216-26-43</b></a>
+      <a href="https://wa.me/584162162643"><span>WhatsApp</span><b>+58 416 216 2643</b></a>
+      <a href="mailto:dihh1978@gmail.com"><span>Correo</span><b>dihh1978@gmail.com</b></a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>© Diana Hernández · Caracas, Venezuela</footer>
+</body>
+</html>
